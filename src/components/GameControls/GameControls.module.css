@@ -1,0 +1,41 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnPrimary,
+.btnSecondary,
+.btnDanger {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color var(--transition);
+  border: none;
+  color: white;
+}
+
+.btnPrimary {
+  background-color: var(--btn-primary);
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background-color: var(--btn-primary-hover);
+}
+
+.btnSecondary {
+  background-color: var(--btn-secondary);
+}
+
+.btnSecondary:hover:not(:disabled) {
+  background-color: var(--btn-secondary-hover);
+}
+
+.btnDanger {
+  background-color: var(--btn-danger);
+}
+
+.btnDanger:hover:not(:disabled) {
+  background-color: var(--btn-danger-hover);
+}
